@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Para Recrutadores</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+
+<body class="pagina-recrutador">
+     <!-- Título principal do quiz -->
+    <h1>Você contrataria a pessoa certa?</h1>
+    
+  <!-- Início do formulário -->
+    <form>
+        <!-- Pergunta 1: Radio (escolha única) -->
+        <p>O que mais te chama atenção em um currículo?</p>
+        <input type="radio" name="curriculo" value="formação"> Formação<br>
+        <input type="radio" name="curriculo" value="portfolio"> Portfólio<br>
+        <input type="radio" name="curriculo" value="soft"> Soft Skills<br>
+        <input type="radio" name="curriculo" value="referencias"> Referências<br><br>
+        <!-- Pergunta 2: Checkbox (escolhas múltiplas) -->
+        <p>Você contrataria alguém que:</p>
+        <input type="checkbox" name="gap"> Tem um gap de 2 anos<br>
+        <input type="checkbox" name="transicao"> Veio de outra área<br>
+        <input type="checkbox" name="faculdade"> Não tem faculdade<br>
+        <input type="checkbox" name="remoto"> Mora fora do país<br><br>
+        <!-- Pergunta 3: Texto aberto -->
+        <p>Para mim, diversidade é...</p>
+        <textarea rows="4" cols="50" placeholder="Escreva sua visão aqui..."></textarea><br><br>
+        <!-- Pergunta 4: Select (menu suspenso) -->
+        <p>Você já percebeu viés inconsciente em entrevistas?</p>
+        <select>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+            <option value="talvez">Acho que sim, mas não sei nomear</option>
+        </select><br><br>
+        <!-- Pergunta 5: Escala (input tipo range) -->
+        <p>De 0 a 10, quanto você confia no "fit cultural"?</p>
+        <input type="range" min="0" max="10" class="meu-slider"><br><br>
+    </form>
+    <form action="resultado-recrutador.html" method="get">
+        <button type="submit">Ver Resultado</button>
+    </form>
+</body>
+
+<footer class="footer">
+    <div class="footer-content">
+      <p>Feito com &hearts; por <strong>Caroline Eugênio</strong></p>
+      <div class="footer-seal">
+        <p class="footer-legal">Projeto educacional. Sem fins lucrativos.</p>
+      </div>
+    </div>
+  </footer>
+
+</html>

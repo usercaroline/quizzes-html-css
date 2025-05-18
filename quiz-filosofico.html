@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Filosófico</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+
+<body class="pagina-filosofico">
+    <!-- Título principal -->
+    <h1>Que mente inquieta habita em você?</h1>
+    <!-- Início do formulário -->
+    <form>
+        <!-- Pergunta 1: Radio -->
+        <p>Como você lida com o silêncio?</p>
+        <input type="radio" name="silencio" value="pensamentos"> Preencho com pensamentos<br>
+        <input type="radio" name="silencio" value="fujo"> Fujo dele<br>
+        <input type="radio" name="silencio" value="respostas"> Encontro respostas nele<br><br>
+        <!-- Pergunta 2: Select -->
+        <p>Você sente que vive no tempo certo?</p>
+        <select>
+            <option value="agora">No agora</option>
+            <option value="passado">Preso ao passado</option>
+            <option value="futuro">À frente do seu tempo</option>
+        </select><br><br>
+        <!-- Pergunta 3: Texto aberto -->
+        <p>Complete: Quando ninguém está olhando, eu...</p>
+        <textarea rows="3" cols="50"></textarea><br><br>
+        <!-- Pergunta 4: Checkbox -->
+        <p>O que te move mais?</p>
+        <input type="checkbox" name="motivação" value="justica"> Justiça<br>
+        <input type="checkbox" name="motivação" value="verdade"> Verdade<br>
+        <input type="checkbox" name="motivação" value="liberdade"> Liberdade<br>
+        <input type="checkbox" name="motivação" value="amor"> Amor<br><br>
+        <!-- Pergunta 5: Escolha de imagem representativa -->
+        <p>Escolha uma imagem que represente sua mente:</p>
+        <label>
+            <input type="radio" name="imagem" value="ocenao">
+            <img src="imagens/oceano.jpg.png" alt="Imagem de um oceano calmo" width="200"><br>
+            Oceano: mente profunda e serena
+        </label>
+        <br><br>
+        <label>
+            <input type="radio" name="imagem" value="labirinto">
+            <img src="imagens/labirinto.jpg.png" alt="Imagem de um labirinto visto de cima" width="200"><br>
+            Labirinto: mente analítica e misteriosa
+        </label>
+        <br><br>
+        <label>
+            <input type="radio" name="imagem" value="chama">
+            <img src="imagens/chama.jpg.png" alt="Imagem de uma chama solitária" width="200"><br>
+            Chama: mente intensa e intuitiva 
+        </label>
+        <br><br>
+    </form>
+    <form action="resultado-filosofico.html" method="get">
+        <button type="submit">Ver Resultado</button>
+    </form>
+</body>
+
+<footer class="footer">
+    <div class="footer-content">
+      <p>Feito com &hearts; por <strong>Caroline Eugênio</strong></p>
+      <div class="footer-seal">
+        <p class="footer-legal">Projeto educacional. Sem fins lucrativos.</p>
+      </div>
+    </div>
+  </footer>
+
+</html>

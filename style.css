@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+</style>
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    font-family: "Roboto Mono", monospace;
+}
+
+@media (max-width: 600px) {
+    h1 {
+      font-size: 1.5rem;
+      padding: 2rem;
+    }
+  
+    a {
+      font-size: 1rem;
+    }
+  }
+
+.intro {
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #570478;
+    max-width: 600px;
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  h1 {
+    animation: pulse 3s infinite ease-in-out;
+  }
+
+/* Estilos gerais */
+body {
+    h1{
+        font-family: "Jersey 10", sans-serif;
+        font-size: 700;
+        padding: 2rem;
+        text-align: center;
+    }
+    font-size: medium;
+    background-color: #a9e9a4;
+    color: #570478;
+  }
+  body {
+    background: linear-gradient(135deg, #a9e9a4, #ccffcc);
+    font-family: 'Playfair Display', serif;
+    color: #570478;
+}
+
+a:hover {
+    color: #a855f7;
+    text-shadow: 0px 0px 8px #a855f7;
+    transition: all 0.3s ease-in-out;
+}
+  /* Página Index */
+  .pagina-index h1 {
+    font-size: 48px; 
+    font-weight: 800;
+    border: 4px solid #570478; 
+    padding: 10px; 
+    display: inline-block; 
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px; 
+  }
+
+  main{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  p{
+    color: #570478;
+    font-size: 1.0rem;
+    
+  }
+
+  /* ===== ESTILOS GLOBAIS ===== */
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #570478; /* cor dos botões */
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+input[type="text"], input[type="range"], input[type="email"], 
+textarea {
+  border: 2px solid #570478;
+  border-radius: 8px;
+  padding: 0.3rem;
+  font-size: 1rem;
+  width: 50%;
+  margin-top: 8px;
+  background-color: transparent;
+  outline: none;
+}
+
+input::placeholder{
+  color: #570478;
+}
+
+select{
+  cursor: pointer;
+  background-color: #a9e9a4;
+  color: #570478;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+label {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+button {
+  background-color: #570478;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #570478;
+}
+
+
+/* ===== ESTILO QUIZ FILOSÓFICO ===== */
+body.quiz-filosofico {
+    background: linear-gradient(to right, #a9e9a4, #fa71cd);
+    color: #570478;
+    font-family: 'Georgia', serif;
+  }
+
+  img{
+    width: 5rem;  
+    border-radius: 5px;
+  }
+  
+  /* ===== ESTILO DO QUIZ RECRUTADOR ===== */
+  body.quiz-recrutador {
+    background: linear-gradient(to right, #a9e9a4, #fa71cd);
+    color: #570478;
+    font-family: 'Segoe UI', sans-serif;
+
+  }
+
+  .meu-slider {
+    -webkit-appearance: none; /* Remove o estilo padrão no Chrome/Safari */
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  /* Linha (track) no Chrome/Safari */
+  .meu-slider::-webkit-slider-runnable-track {
+    background: #570478; /* Cor da barra */
+    height: 8px;
+    border-radius: 4px;
+  }
+  
+  /* Bolinha (thumb) no Chrome/Safari */
+  .meu-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #570478;
+    cursor: pointer;
+    margin-top: -6px; 
+  }
+
+  .footer {
+  background-color: #ccccccfc;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  border-top: 2px solid #ccccccfc;
+  margin-top: 40px;
+}
+
+.footer-content p {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer-seal {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.footer-seal img {
+  width: 30px;
+  height: auto;
+}
+
+.footer-legal {
+  font-size: 12px;
+  color: #777;
+  max-width: 300px;
+}
+
+
+
+
+ 
+
+
+
